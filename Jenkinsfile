@@ -11,11 +11,6 @@ pipeline {
             steps {
                 sh 'cd sources; python -m unittest; cd ..'
             }
-            post {
-                always {
-                    junit 'test-reports/results.xml'
-                }
-            }
         }
     }
 }
