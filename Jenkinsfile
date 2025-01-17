@@ -9,8 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'cd sources; python -m pytest'
-                sh 'python -m pytest --junit-xml test-reports/results.xml' 
+                sh 'cd sources; python -m pytest --junit-xml test-reports/results.xml' 
                 sh 'cd ..'
             }
             post {
