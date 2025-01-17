@@ -1,3 +1,6 @@
+*.swp
+.pytest_cache/
+
 .DS_store
 # Byte-compiled / optimized / DLL files
 __pycache__/
