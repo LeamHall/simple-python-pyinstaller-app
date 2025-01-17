@@ -14,7 +14,7 @@ pipeline {
             }
             post {
                 always {
-                    junit 'test-reports/results.xml' 
+                    junit 'sources/test-reports/results.xml' 
                 }
             }
         }
